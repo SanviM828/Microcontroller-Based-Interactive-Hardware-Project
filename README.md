@@ -22,7 +22,7 @@ Originally inspired by interactive prop (Flame Chompers) from entertainment medi
 
 ## Skills & Tools
 - **Embedded Programming:** Arduino IDE (C/C++)
-- **Circuit Simulation**: Simulink, LTSpice
+- **Circuit Simulation**: SimulIDE
 - **Hardware Development:** Circuit prototyping, LED arrays, sound modules, motors  
 - **Design Tools:** CAD modeling for housing/mechanical parts (Fusion360 or SolidWorks)  
 - **Other Tools:** Soldering, perfboard integration, 3D printing (planned)  
