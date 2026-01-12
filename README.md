@@ -91,6 +91,8 @@ The firmware avoids `delay()` to maintain responsiveness. It uses a **State Mach
     * **Acceleration Logic:** Every cycle, the interval between actions decreases, creating a sense of urgency.
 3.  **Explosion State:** Rapid-fire random frequency generation to simulate white noise.
 
+**Repository Structure:** The complete Arduino firmware source code, including the non-blocking state machine and chaos logic, is available in the [`src/`](src/) directory.
+
 ## 6. Project Timeline & Learning Outcomes
 **Duration:** August 2025 – Present
 
