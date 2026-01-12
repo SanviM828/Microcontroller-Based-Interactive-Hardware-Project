@@ -109,7 +109,17 @@ This project was scoped not just as a build, but as a comprehensive learning mod
 **Prototype Demo:**
 [Watch the Servo Motor Demo](https://github.com/user-attachments/assets/fb6d3c1f-4539-4eec-886c-4fc25acba1a2)
 
+## 8. Current Status & Future Roadmap
+*The project is currently in the **"Electronic Verification Complete"** stage. The core logic, power distribution, and actuation are fully functional. The focus is now shifting to mechanical integration.*
 
+### Phase 3: Mechanical Integration (In Progress)
+The final phase of this project involves transitioning from the benchtop prototype to a handheld, ergonomic unit.
+* **CAD Design:** Developing a custom 3D-printable enclosure using **Fusion 360**.
+* **Design Goals:**
+    * **Modular Assembly:** Creating specific mounting points for the PCB and Servo to prevent mechanical rattling.
+    * **Weight Distribution:** Designing a hollow handle to house the 18650 Li-Ion cells, acting as a counterweight to the servo mechanism in the head.
+    * **Serviceability:** Implementing a slide-out battery tray or magnetic cap to allow for field battery swaps without tools.
+* **Materials:** Planning to print in **PLA+ or PETG** for higher impact resistance compared to standard PLA.
 ---
 
 ## Disclaimer
