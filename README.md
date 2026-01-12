@@ -32,10 +32,10 @@ The system features a **non-blocking state machine** that synchronizes mechanica
 *Below are the diagrams for the power stage configurations tested:*
 
 **Configuration A: 12V Lab Bench/Battery Input**
-![12V Circuit Diagram](media/ckt_12v.jpg)
+
 
 **Configuration B: 7.4V Portable Li-Ion Input**
-![7.4V Circuit Diagram](media/ckt_7.4v.jpg)
+
 
 ### Component Selection Rationale
 *Design decisions regarding power management and protection.*
@@ -101,6 +101,9 @@ This project was scoped not just as a build, but as a comprehensive learning mod
 * **Phase 4:** Iterated on the code to move from blocking `delay()` functions to professional-grade non-blocking timers.
 
 ## 7. Media Gallery
+![7.4V Circuit Diagram](media/ckt_7.4v.jpg)
+
+![12V Circuit Diagram](media/ckt_12v.jpg)
 
 **Simulation (SimulIDE):**  
 ![Simulation Screenshot](media/jinx_simullide.png)
