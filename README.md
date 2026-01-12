@@ -32,10 +32,10 @@ The system features a **non-blocking state machine** that synchronizes mechanica
 *Below are the diagrams for the power stage configurations tested:*
 
 **Configuration A: 12V Lab Bench/Battery Input**
-![12V Circuit Diagram](Insert_Link_To_Your_12V_Image_Here.jpg)
+![12V Circuit Diagram](https://github.com/SanviM828/Microcontroller-Based-Interactive-Hardware-Project/blob/main/media/ckt_12v.jpg)
 
 **Configuration B: 7.4V Portable Li-Ion Input**
-![7.4V Circuit Diagram](Insert_Link_To_Your_7.4V_Image_Here.jpg)
+![7.4V Circuit Diagram](media/ckt_7.4v.jpg)
 
 ---
 
