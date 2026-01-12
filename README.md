@@ -32,10 +32,26 @@ The system features a **non-blocking state machine** that synchronizes mechanica
 *Below are the diagrams for the power stage configurations tested:*
 
 **Configuration A: 12V Lab Bench/Battery Input**
-![12V Circuit Diagram](https://github.com/SanviM828/Microcontroller-Based-Interactive-Hardware-Project/blob/main/media/ckt_12v.jpg)
+![12V Circuit Diagram](media/ckt_12v.jpg)
 
 **Configuration B: 7.4V Portable Li-Ion Input**
 ![7.4V Circuit Diagram](media/ckt_7.4v.jpg)
+
+### Component Selection Rationale
+*Design decisions regarding power management and protection.*
+
+**1. Voltage Regulator: LM2596 vs. AMS1117**
+* **Initial Concept:** AMS1117 (Linear Regulator).
+* **Problem:** Calculations indicated significant thermal issues. Stepping down 12V to 5V with a 0.5A load creates a 7V drop, dissipating **3.5 Watts** of waste heat ($P = V_{drop} \times I$). This would trigger immediate thermal shutdown.
+* **Selected Solution:** Switched to the **LM2596 Buck Converter**.
+    * **Reason:** It utilizes high-frequency switching (PWM) to step down voltage efficiently (>80%), generating minimal heat compared to linear regulators.
+    * **Note on Size:** While the **MP1584** was considered for its smaller footprint (due to a 1.5 MHz switching frequency allowing for smaller inductors), the **LM2596** (150 kHz) was selected based on immediate component availability and robust current handling.
+
+**2. Flyback Diode: 1N5819 vs. 1N4007**
+* **Initial Concept:** 1N4007 (Standard Silicon Rectifier).
+* **Selected Solution:** **1N5819 (Schottky Diode)**.
+    * **Reason 1 (Transient Response):** The servo motor generates rapid inductive voltage spikes ("noise") during operation. The 1N5819 is a fast-switching Schottky diode capable of blocking these transients instantly, whereas the 1N4007 is too slow for effective motor protection.
+    * **Reason 2 (Efficiency):** The 1N5819 has a lower forward voltage drop (~0.3V) compared to the 1N4007 (~0.7V), resulting in less power loss in battery-protection applications.
 
 ---
 
@@ -87,10 +103,11 @@ This project was scoped not just as a build, but as a comprehensive learning mod
 ## 7. Media Gallery
 
 **Simulation (SimulIDE):**
-![Simulation Screenshot](Insert_Link_To_Your_Simulation_Screenshot.jpg)
+![Simulation Screenshot](media/jinx_simullide.jpg)
 
 **Prototype Demo:**
-[Watch the Servo Motor Demo](Insert_Link_To_Video_Or_GIF.gif)
+[Watch the Servo Motor Demo](https://github.com/user-attachments/assets/fb6d3c1f-4539-4eec-886c-4fc25acba1a2)
+
 
 ---
 
