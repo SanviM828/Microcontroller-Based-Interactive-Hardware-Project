@@ -103,7 +103,7 @@ This project was scoped not just as a build, but as a comprehensive learning mod
 ## 7. Media Gallery
 
 **Simulation (SimulIDE):**
-![Simulation Screenshot](media/jinx_simullide.jpg)
+![Simulation Screenshot](media/jinx_simullide.png)
 
 **Prototype Demo:**
 [Watch the Servo Motor Demo](https://github.com/user-attachments/assets/fb6d3c1f-4539-4eec-886c-4fc25acba1a2)
