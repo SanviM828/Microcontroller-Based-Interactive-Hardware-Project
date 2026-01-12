@@ -102,7 +102,7 @@ This project was scoped not just as a build, but as a comprehensive learning mod
 
 ## 7. Media Gallery
 
-**Simulation (SimulIDE):**
+**Simulation (SimulIDE):**  
 ![Simulation Screenshot](media/jinx_simullide.png)
 
 **Prototype Demo:**
